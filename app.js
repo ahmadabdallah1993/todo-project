@@ -84,7 +84,6 @@ arr[8] = cyclingQuestion();
 
 console.log(arr);
 
-// CheckEmpty();
 
 
 
