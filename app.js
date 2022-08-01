@@ -65,6 +65,15 @@ function cyclingQuestion() {
 }
 
 
+function checkEmpty(array) {
+    for(var i = 0; i < array.length; i ++) {
+        if(array[i] == '' || array[i] == undefined || array[i] == null){
+            array[i] = "invalid";
+        }
+    }
+    return array;
+}
+
 var array= [];
 
 array[0] = userName();
@@ -78,9 +87,18 @@ array[6] = gymQuestion();
 array[7] = studyQuestion();
 array[8] = cyclingQuestion();
 
-console.log(array);
+checkEmpty(array);
 
+//console.log(array);
 
+function print(array) {
+    for(var q = 0; q < array.length; q ++) {
+        console.log("element number  " + q + ": ");
+        console.log(array[q]);
+    }
+}
+
+print(array);
 
 
 
