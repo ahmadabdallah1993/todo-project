@@ -1,24 +1,21 @@
 function userName() {
-
-    var names = prompt("please enter your name!")
+    var names = prompt("please enter your name!");
     return names;
 }
 
 function userGendre() {
-    var gendres = prompt("please enter your gendre as male or female!")
-    
+    var gendres = prompt("please enter your gendre as male or female!");
     return gendres;
 }
 
 
 function userAge() {
     var ages = prompt("please enter your age!");
-    
     return ages;
 }
 
 function checkAge() {
-    if(arr[2] <= 0){
+    if(array[2] <= 0){
         var check = alert("age must be bigger than 0");
         return check;
     }
@@ -33,15 +30,14 @@ function skipWelcomming() {
 
 function lastCheck() {
     
-    if (arr[2] <= 0 && arr[4] == false) {
+    if (array[2] <= 0 && array[4] == false) {
         return alert("welcome");
-    } else {
-        if (arr[4] == false && arr[1] == "male"){
-            return alert("Welcome Mr. " + arr[0]);
-        } else {
-                 alert("Welcome Ms. " + arr[0]);
+    } else if (array[4] == false && array[1] == "male"){
+            return alert("Welcome Mr. " + array[0]);
+        } else if (array[4] == false && array[1] == "female") {
+                 alert("Welcome Ms. " + array[0]);
             }
-            } 
+            
 
     }
 
@@ -69,20 +65,20 @@ function cyclingQuestion() {
 }
 
 
-var arr = [];
+var array= [];
 
-arr[0] = userName();
-arr[1] = userGendre();
-arr[2] = userAge();
-arr[3] = checkAge();
-arr[4] = skipWelcomming();
-arr[5] = lastCheck();
+array[0] = userName();
+array[1] = userGendre();
+array[2] = userAge();
+array[3] = checkAge();
+array[4] = skipWelcomming();
+array[5] = lastCheck();
 
-arr[6] = gymQuestion();
-arr[7] = studyQuestion();
-arr[8] = cyclingQuestion();
+array[6] = gymQuestion();
+array[7] = studyQuestion();
+array[8] = cyclingQuestion();
 
-console.log(arr);
+console.log(array);
 
 
 
