@@ -68,15 +68,9 @@ function cyclingQuestion() {
     return cycling;
 }
 
-function CheckEmpty(e) {
-    
-    if (e == ''){
-        e = "invalid";
-    }
-    return e;
-}
 
 var arr = [];
+
 arr[0] = userName();
 arr[1] = userGendre();
 arr[2] = userAge();
@@ -88,21 +82,9 @@ arr[6] = gymQuestion();
 arr[7] = studyQuestion();
 arr[8] = cyclingQuestion();
 
-//console.log(arr);
+console.log(arr);
 
-//CheckEmpty(arr[0]);
-//CheckEmpty(arr[1]);
-//CheckEmpty(arr[2]);
-
-
-//  for (var i = 0; i <= 2; arr ++) {
-//     CheckEmpty(arr[i]);
-// }
-
-
-// for(var j = 0; j < arr.length; j ++) {
-//     console.log(arr[j]);
-// }
+// CheckEmpty();
 
 
 
