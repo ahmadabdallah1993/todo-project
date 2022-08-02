@@ -5,6 +5,13 @@ function userName() {
 
 function userGendre() {
     var gendres = prompt("please enter your gendre as male or female!");
+    
+
+    while(gendres !== "male" && gendres !== "female"){
+        alert("again !!! please enter your gendre as male or female!");
+        gendres = prompt("please enter your gendre as male or female!");
+    }
+
     return gendres;
 }
 
